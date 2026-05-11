@@ -10,6 +10,7 @@ if (!prompt) {
 // Pipe the prompt via stdin to avoid shell escaping issues
 // with special characters (URLs, commas, quotes, etc.)
 const claude = spawn("claude", ["-p", "--dangerously-skip-permissions"], {
+    cwd: "C:\\Users\\alexandre.salsinha",
     shell: true,
     stdio: ["pipe", "pipe", "pipe"],
 });
